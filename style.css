@@ -117,7 +117,7 @@ main {
   padding: 0.5rem 1rem;
 }
 
-.hero_row1 {
+.hero_col1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -172,6 +172,83 @@ main {
   gap: 20px;
 }
 
+.second-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.second-section span {
+  text-decoration: line-through;
+  color: #999795;
+  font-weight: 600;
+}
+
+.devenvironment-section {
+  padding: 2rem 1rem;
+}
+
+.devenvironment-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dev_col1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dev_col1 h3 {
+  font-size: 32px;
+}
+
+.dev_col1 p {
+  font-size: 20px;
+  color: #9398a0;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.dev_col1 .buttons-wrapper {
+  display: flex;
+  gap: 10px;
+  margin: auto 0;
+}
+
+.buttons-wrapper button {
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.btn_orange {
+  background-color: #ffae33;
+}
+
+.btn_orange:active {
+  background-color: #e2931df3;
+}
+
+.btn_pink {
+  background-color: #ffb0ae;
+}
+
+.btn_pink:active {
+  background-color: #e68f8e;
+}
+
+.dev_col2 {
+  flex: 1;
+}
+
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
@@ -215,6 +292,11 @@ main {
   }
 
   .git_icons {
+    gap: 15px;
+  }
+
+  .devenvironment-section {
+    flex-direction: column;
     gap: 15px;
   }
 }
