@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul,
@@ -33,6 +34,7 @@ img {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  color: #12100c;
 }
 
 .container {
@@ -51,6 +53,7 @@ body {
   position: sticky;
   top: 0;
   background-color: inherit;
+  z-index: 40;
 }
 
 .nav-list {
@@ -126,14 +129,12 @@ main {
 .main_heading {
   font-size: 80px;
   line-height: 88px;
-  color: #12100c;
   font-weight: 700;
 }
 
 .hero_paragraph {
   font-size: 23px;
   line-height: 32px;
-  color: #12100c;
   padding: 0 10rem 0 0;
 }
 
@@ -320,6 +321,105 @@ main {
   -o-border-radius: 1px;
 }
 
+.users-section {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.users_section_heading {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.users_cards_wrapper {
+  display: flex;
+  gap: 25px;
+}
+
+.slider_container {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.users_cards_wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  gap: 20px;
+  cursor: grab;
+}
+
+.user_card {
+  flex: 0 0 35%;
+  max-width: 40%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.user_message p {
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.about_user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: auto 0;
+}
+
+.user_img {
+  min-width: 50px;
+  height: auto;
+}
+
+.user_status {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user_name {
+  font-size: 1rem;
+}
+
+.companies_logos_wrapper {
+  width: 80%;
+  display: flex;
+  gap: 3.1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto 25px;
+}
+
+.company_logo button {
+  width: 90px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  font-size: 1.25rem;
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+.company_logo button img {
+  height: 50px;
+  object-fit: contain;
+  background-color: transparent;
+}
+
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
@@ -346,7 +446,6 @@ main {
   .main_heading {
     font-size: 60px;
     line-height: 68px;
-    color: #12100c;
     font-weight: 700;
   }
 
@@ -366,8 +465,38 @@ main {
     gap: 15px;
   }
 
-  .devenvironment-section {
+  .devenvironment-section,
+  .buttons-wrapper {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .codeditor-section h3 {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+  .chromefirefox,
+  .border_buttons {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .border_buttons {
+    gap: 28px;
+  }
+
+  .users_section_heading {
+    font-size: 2rem;
+  }
+
+  .user_card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .users_cards_wrapper {
+    gap: 7px;
   }
 }
