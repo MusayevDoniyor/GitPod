@@ -249,6 +249,77 @@ main {
   flex: 1;
 }
 
+.codeditor-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeditor-section h3 {
+  font-size: 54px;
+  line-height: 72px;
+}
+
+.codeditor-section p {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #999795;
+}
+
+.chromefirefox {
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.chrome_button,
+.firefox_button {
+  z-index: 10;
+  width: 170px;
+  display: flex;
+  gap: 7px;
+  padding: 7px;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 25px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.chrome_button img,
+.firefox_button img {
+  width: 30px;
+  height: auto;
+}
+
+.border_buttons {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  gap: 13px;
+  top: 25px;
+}
+
+.border_btn {
+  width: 169.5px;
+  height: 43px;
+  padding: 7px;
+  border-radius: 1px;
+  border: 1px solid;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
